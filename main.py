@@ -5,3 +5,12 @@ When called, your function should print out ALL of the multiples of `n` between 
 
 Call your function for `n = 2`, `n = 3`, `n = 5`, and `n = 12`.
 '''
+def print_multiples(n,r=100):
+    print("the multiples of ",n," less than or equal to ",r," are:")
+    for i in range (r+1):
+        if i % n == 0:
+            print(i)
+print_multiples(2)
+print_multiples(3)
+print_multiples(5)
+print_multiples(12)
